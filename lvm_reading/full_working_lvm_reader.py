@@ -12,7 +12,8 @@ setpoint = pd.read_csv(arquivo_setpoint, delimiter="\t", skiprows=21, header=0, 
 # Excluindo coluna "Comment"
 temp = temp.drop("Comment", axis=1)
 pwm = pwm.drop("Comment", axis=1)
-setpoint = setpoint.drop("Comment", axis=1)
+setpoint = setpoint.drop("Comment", axis=1) #VITORIRWIEHO2QDR
+
 
 # Padronização do tipo das variaveis e excluindo coluna "comment"
 # temp["X_Value"] = temp["X_Value"].str.replace(",", ".").astype(float)
